@@ -1,1 +1,1 @@
-** A blog of <h6> geoinformation systems <h6> with <h6>microbiology</h6> along with <h6>healthy tips</h6> to a right <h6>lifestyle</h6> mainly due to <h6>travelling</h6> and many more. If your confused, visit us at: https://gagangowda89.github.io/Divgan/ **
+A blog of <h6> geoinformation systems </h6> with <h6>microbiology</h6> along with <h6>healthy tips</h6> to a right <h6>lifestyle</h6> mainly due to <h6>travelling</h6> and many more. If your confused, visit us at: https://gagangowda89.github.io/Divgan/ 
