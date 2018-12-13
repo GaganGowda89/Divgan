@@ -834,6 +834,10 @@ blockquote {
         text-decoration: none; }
     #colorlib-container .item:hover .pop-up-overlay, #colorlib-container .item:focus .pop-up-overlay {
       opacity: 1; }
+    #map {
+      height: 400px;
+      width:400px;
+    }  
 
 .colorlib-heading-2 {
   display: block;
