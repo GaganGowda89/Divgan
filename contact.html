@@ -51,6 +51,10 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<!-- 3D Maps -->
+	<script src="https://cdn-webgl.eegeo.com/eegeojs/early_access/latest/eegeo.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" rel="stylesheet" />
+
 
 	</head>
 	<body>
@@ -106,10 +110,10 @@
 						<h2 class="heading-2">Contact Information</h2>
 						<div class="row contact-info-wrap row-pb-lg">
 							<div class="col-md-3">
-								<p><span><i class="icon-location-2"></i></span> Wilhelm Raabe Strasse 26, <br> 67663 Kaiserslautern, Germany</p>
+								<p><span><i class="icon-location-2"></i></span> Meisenweg 6, <br> 67663 Kaiserslautern, Germany</p>
 							</div>
 							<div class="col-md-3">
-								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 15202067945</a></p>
+								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 15202067045</a></p>
 							</div>
 							<div class="col-md-3">
 								<p><span><i class="icon-paperplane"></i></span> <a href="mailto:manjan.nmsrd@gmail.com">manjan.nmsrd@gmail.com</a></p>
@@ -304,6 +308,13 @@
 	<!-- Google Map -->
 	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	// <script src="js/google_map.js"></script> -->
+	<!-- 3D Map -- >
+	<script>
+      var map = L.eeGeo.map("map", "caf4df5c27621598ab247f02d35b0cb8", {
+        center: [37.7858, -122.401],
+        zoom: 16
+      });
+    </script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
