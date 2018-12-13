@@ -13,7 +13,8 @@
         zoom: 16
       });
 
-      //L.marker([37.7858, -122.401]).addTo(mymap);
+     var marker = L.marker([37.7858, -122.401]).addTo(map);
+     marker.bindPopup("<b>Hello Welcome to 3D World!</b>").openPopup();
     </script>
 
   </div>
