@@ -48,9 +48,6 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-     <style>
-		.contentPost { color : red;}
-	</style>
 
 	</head>
 	<body>
@@ -87,6 +84,7 @@
 				</div>
 			</div>
 		</nav>
+		<img class="intro_lg" src="https://docs.angularjs.org/img/angularjs-for-header-only.svg">
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -533,10 +531,6 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 	</div>
-
-	<div class="contentPost">
-         <h2>Hello There !!!</h2>
-    </div>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -556,10 +550,16 @@
 	<!-- Main -->
 	<script src="js/main.js"></script>
 	<script>
+		$(document).ready(function() {
+           $(".intro_lg").click(function() {
+           $(this).fadeOut(10000, function() {
+             var path = "https://gagangowda89.github.io/Divgan/index.html";
+            $(this).attr("src", path);
+            }).fadeIn(1000);
+         return false;
+  });
+});
 
-	$(document).ready(function() {
-    $(".contentPost").delay(20000).fadeOut("slow");
-           });
     </script>
 	</body>
 </html>
