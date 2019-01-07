@@ -126,11 +126,11 @@
 									<li> The first step is desiging the map using the leaflet API as discussed in the <a href="index.html"> previous blog.</a> </li>
 									<li> Note that the control display of map option enables different Basemaps view. The example snippet for the different view is as shown below.
 										 <code>
-										 		   // Basemaps <br/>
+										 		 <br/>  // Basemaps <br/>
 												var topographic=L.esri.basemapLayer("Topographic").addTo(map); <br/>
 
 										var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-       									attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}).addTo(map); <br/>
+       									attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}).addTo(map); <br/><br/>
 
  												// Mapview control <br/>
 										 	    var baselayers = {  <br/>
@@ -139,7 +139,7 @@
                                                                 }; <br/>
 
 										 </code></li>	
-                                     <li> After the basemap views are updated, its time for the leaflet to add it to the map layers. 
+                                     <li> After the basemap views <bold>(baselayers)</bold> are updated, its time for the leaflet to add it to the map layers. 
                                      		<code> L.control.layers(baselayers).addTo(map); </code>
                                       </li>
 
