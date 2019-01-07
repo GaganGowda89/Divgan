@@ -134,14 +134,18 @@
 
  												// Mapview control <br/>
 										 	    var baselayers = {  <br/>
-         														    "Topographic" : topographic, <br/>
-          														    "GoogleEarth" : Esri_WorldImagery <br/>
+         														 <pre>  "Topographic" : topographic, </pre> <br/>
+          														  <pre> "GoogleEarth" : Esri_WorldImagery </pre> <br/>
                                                                 }; <br/>
 
 										 </code></li>	
                                      <li> After the basemap views <bold>(baselayers)</bold> are updated, its time for the leaflet to add it to the map layers. 
                                      		<code> L.control.layers(baselayers).addTo(map); </code>
-                                      </li>
+                                      </li>.
+
+                                      <li> Once the Leaflet map have been updated as per the code, you should see the output as follows: <br/>
+
+                                      			<img src="images/blog-inside-shpview.jpg" class="img-responsive" alt="html5 bootstrap template"> </li>
 
 
 										<blockquote>
