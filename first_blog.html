@@ -118,31 +118,31 @@
 										<h2><a href="blog.html">Map Viewer using Leaflet</a></h2>
 																	<p>It's always been fascinating working with Geographic Information Systems, mainly seeing the advacements from Google Maps, OpenstreetMaps and others. The challenge is to build solution to a problem geographically, which could ease the user who wants to find solution w.r.t to his/her Geocapture.</p>
 
-								<p> The idea in this blog is certainly trying to incorporate what was seen in  <a href ="index.html"> Leaflet basic introduction </a>. The blog explores how a plugin can be incorporated well for our basic needs. In this case the need is how you want to see your Geo-capture (data containing geographical inforamtion with some attributes, eg: Shapefiles) </p>. Instead of using a open source tool or online tool, the idea of designing your own tool is more satisfying.
+								<p> The idea in this blog is certainly trying to incorporate what was seen in  <a href ="index.html"> Leaflet basic introduction </a>. The blog explores how a plugin can be incorporated well for our basic needs. In this case the need is how you want to see your Geo-capture (data containing geographical inforamtion with some attributes, eg: Shapefiles). Instead of using a open source tool or online tool, the idea of designing your own tool is more satisfying.</p>
 
 								<p> Let's start over to the step by step process of building a Map Viewer using Leaflet </p>
 
 								<ol>
-									<li> The first step is desiging the map using the leaflet API as discussed in the <a href="index.html"> previous blog. </li>
+									<li> The first step is desiging the map using the leaflet API as discussed in the <a href="index.html"> previous blog.</a> </li>
 									<li> Note that the control display of map option enables different Basemaps view. The example snippet for the different view is as shown below.
 										 <code>
-										 		   // Basemaps
-												var topographic=L.esri.basemapLayer("Topographic").addTo(map);
+										 		   // Basemaps <br/>
+												var topographic=L.esri.basemapLayer("Topographic").addTo(map); <br/>
 
 										var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-       									attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}).addTo(map);
+       									attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}).addTo(map); <br/>
 
- 												// Mapview control
-										 	    var baselayers = {
-         														    "Topographic" : topographic,
-          														    "GoogleEarth" : Esri_WorldImagery
-                                                                };
+ 												// Mapview control <br/>
+										 	    var baselayers = {  <br/>
+         														    "Topographic" : topographic, <br/>
+          														    "GoogleEarth" : Esri_WorldImagery <br/>
+                                                                }; <br/>
 
 										 </code></li>	
                                      <li> After the basemap views are updated, its time for the leaflet to add it to the map layers. 
                                      		<code> L.control.layers(baselayers).addTo(map); </code>
                                       </li>
-                                     
+
 
 										<blockquote>
 											The map viewer is designed using Leaflet. The user needs to upload his/her Shapefile in .zip format. The end result is a map view of the Geo captured information in the .zip file.
