@@ -149,6 +149,14 @@
 
                                       			<img src="images/blog-inside-shpview.jpg" class="img-responsive" alt="html5 bootstrap template"> </li>
 
+                                      <li> The next step is all about exploring the <a href="https://leafletjs.com/plugins.html">Leaflet Plugins</a>. As stated above we want to upload our geo-capture to see in our Mapview. I am using the <a href="https://github.com/calvinmetcalf/leaflet.shapefile">Leaflet.Shapefile</a> plugin, which you need to embedd in your code.</li>
+
+                                      <li> Make sure you have added the shapefile control to your script. The code snippet is as follows:<br/>
+                                      	  <code>// Shapefile control <br/>
+                                             L.control.shapefile({ position: 'topleft' }).addTo(map);
+                                      	  </code>
+                                       If you have followed the steps correctly, you should get the final screenshot with the uploaded shapefile image content in <pre>blue</pre> as seen:			
+                                      			<img src="images/blog-shpfile.jpg" class="img-responsive" alt="html5 bootstrap template"> </li>
 
 										<blockquote>
 											The map viewer is designed using Leaflet. The user needs to upload his/her Shapefile in .zip format. The end result is a map view of the Geo captured information in the .zip file.
